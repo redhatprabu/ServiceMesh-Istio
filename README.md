@@ -1,5 +1,9 @@
 # ServiceMesh-Istio
 
+## Architecture  : 
+
+https://interactive.linuxacademy.com/diagrams/ServiceMeshwithIstio.html
+
 ## Deploy Istio into a Kubernetes Cluster and Deploy the bookinfo Application
 
 
@@ -34,7 +38,7 @@ Verify that the control plane is running:
 ```
 When all of the pods are up and running (which we can verify by running that command again) we can move on.
 
-# Install the bookinfo application with manual sidecar injection:
+## Install the bookinfo application with manual sidecar injection:
 
 ```
 [cloud_user@km]$ kubectl apply -f <(istioctl kube-inject -f istio-1.0.6/samples/bookinfo/platform/kube/bookinfo.yaml)
@@ -87,8 +91,8 @@ to this:
         subset: v2
 ```
 
-#Task2 
-#Install Istio in Kubernetes and Deploy the bookinfo Application
+## Task2 
+## Install Istio in Kubernetes and Deploy the bookinfo Application
 
 Get the Istio installation package and unpack it:
 
@@ -119,7 +123,7 @@ Create an ingress and virtual service for the application:
 Now, in a web browser, let's verify the page loads at the URL http://<kn1PUBLICIP ADDRESS>:30080/productpage.
 ```
 
-#Configure the Forwarder, Install Nginx, and Access the Grafana Dashboard
+## Configure the Forwarder, Install Nginx, and Access the Grafana Dashboard
 
 
 
